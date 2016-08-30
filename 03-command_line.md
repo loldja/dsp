@@ -37,13 +37,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > ls [ lists files and directories within a directory ]
-> > ls -a [ displays all files, including hidden files, plus directories ] 
-> > ls -l [ displays the long format listing, including permissions, last date edited, etc ]
-> > ls -lh [ same as above, but filesize is more readable, i.e. in kb, gb, or b ]
-> > ls -lah [ same as above, but also includes hidden files ]
-> > ls -t [ same as ls, but listedn in order of last date edited, newest first ]
-> > ls -Glp [ long format, directories with / after, directory names highlighted ]
+> * **ls** lists files and directories within a directory
+> * **ls -a** displays all files, including hidden files, plus directories 
+> * **ls -l** displays the long format listing, including permissions, last date edited, etc
+> * **ls -lh** same as above, but filesize is more readable, i.e. in kb, gb, or b
+> * **ls -lah** same as above, but also includes hidden files
+> * **ls -t** same as ls, but listedn in order of last date edited, newest first
+> * **ls -Glp** long format, directories with / after, directory names highlighted
 
 
 ---
