@@ -13,16 +13,16 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > +less - page through a file
-> > +cat - print the whole file
-> > +xargs - execute arguments
-> > +grep - find things inside of files
-> > +apropos - find what manual page is appropriate
-> > +popd - pop directory
-> > +pushd - push directory
-> > +exit - exits the shell
-> > +sudo - become super user root
-> > +export - sets a new environment variable
+> * less - page through a file
+> * cat - print the whole file
+> * xargs - execute arguments
+> * grep - find things inside of files
+> * apropos - find what manual page is appropriate
+> * popd - pop directory
+> * pushd - push directory
+> * exit - exits the shell
+> * sudo - become super user root
+> * export - sets a new environment variable
 
 ---
 
