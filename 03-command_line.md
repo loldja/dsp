@@ -52,11 +52,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > ls -lR [ shows the files in every sub directory ] 
-> >
-> >
-> >
-> >
+> * **ls -lR** shows the files in every sub directory 
+> * **ls -Gmp** shows the files as a comma-separated list, directories highlighted and with a backslash after
+> * **ls -1** each entry gets its own line
+> * **ls -Tl** long entry form, with full timestamp shown (MM:dd: HH:MM:ss YYYY)
+> * **ls -F** files are "flagged", i.e. directories show backslashs, and executables shown with '*'
 
 
 ---
@@ -65,7 +65,11 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > Executes arguments. 
+> > Executes arguments. Xargs can handle shell commands in a way that is sometimes safer than calling commands directly. For example, you can use 'cp' to copy files from one directory to another, but if you run out of RAM of throw an error, the entire operation will fail.  
+> > So instead of using cp to copy all JPEGs from one directory to another, you could type the following:  
+```console
+$ find /photos/ -type f -name "*.jpg" -print0 | xargs -0 -r -I file cp -v -p file --target-directory=/new/photos
+``` 
 
  
 
