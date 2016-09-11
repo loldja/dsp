@@ -1,6 +1,7 @@
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
 
+print "DONUTS FUNCTION TESTS"
 
 def donuts(count):
     """
@@ -18,8 +19,16 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if count >= 10:
+        print 'Number of donuts: many'
+    else:
+        print 'Number of donuts: ' + str(count)
 
+##test cases
+donuts(5)
+donuts(12)
+
+print "BOTH_ENDS FUNCTION TESTS"
 
 def both_ends(s):
     """
@@ -37,8 +46,18 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    if(len(s)<2):
+        return ''
+    else:
+        return (s[0] + s[1] + s[-2] + s[-1])
 
+#test cases
+print both_ends('spring')
+print both_ends('lauren oldja')
+print both_ends('t')
+print both_ends('to')
+
+print "FIX_START FUNCTION TESTS"
 
 def fix_start(s):
     """
@@ -56,8 +75,20 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    first_letter = s[0]
+    new_string = ''
+    for letter in s: 
+        if letter == first_letter:
+            new_string += '*'
+        else:
+            new_string += letter
+    return first_letter + new_string[1:]
 
+print fix_start('babble')
+print fix_start('aardvark')
+print fix_start('google')
+
+print "MIX_UP FUNCTION TESTS"
 
 def mix_up(a, b):
     """
@@ -74,8 +105,16 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    mix_temp = a[0:2]
+    a = b[0:2] + a[2:]
+    b = mix_temp + b[2:]
+    return a, b
 
+print mix_up('dog', 'dinner')
+print mix_up('chocolate','stop sign')
+print mix_up('rainbow','butterfly')
+
+print "VERBING FUNCTION TESTS"
 
 def verbing(s):
     """
@@ -91,8 +130,20 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if len(s) >= 3:
+        if s[-3:]=="ing":
+            s += "ly"
+        else:
+            s += "ing"
 
+    return s
+
+print verbing('hail')
+print verbing('swimming')
+print verbing('go')
+
+
+print "NOT_BAD FUNCTION TESTS"
 
 def not_bad(s):
     """
@@ -111,8 +162,24 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
 
+    start_index = s.lower().find("not")
+    end_index = s.lower().find("bad")+3
+    if end_index < start_index:
+        return s
+    elif start_index == 0:
+        return s[:start_index] + 'Good' + s[end_index:] 
+    else:
+        return s[:start_index] + 'good' + s[end_index:]
+    
+print not_bad('This movie is not so bad')
+print not_bad('This tea is not hot')
+print not_bad("It's bad yet not")
+print not_bad('This dinner is not that bad')
+print not_bad('Not bad deal')
+
+
+print "FRONT_BACK FUNCTION TESTS"
 
 def front_back(a, b):
     """
@@ -130,4 +197,17 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    if len(a) % 2 == 1:
+        a_length = len(a)/2+1
+    else:
+        a_length = len(a)/2
+    if len(b) % 2 == 1:
+        b_length = len(b)/2+1
+    else:
+        b_length = len(b)/2
+    return a[:a_length] + b[:b_length] + a[a_length:] + b[b_length:]
+
+print front_back('abcde','xyz')
+print front_back('abcd','xy')
+print front_back('Kitten','Donut')
+print front_back('potato','pumpkin')
