@@ -61,7 +61,18 @@ $ sorted(('ah','Eh','aa','AA'),key=lambda word: word.lower())
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions are a Pythonic alternative to loops with incrementing throwaway generators to move through each element in a list. `map` and `filter` also provide this functional ability using Python reserved words.  
+
+>> Typical list comprehension:
+```
+doubled_odds = [n * 2 for n in numbers if n % 2 == 1]
+# doubles every odd number in a list
+```
+
+>> Same functionality using `map` and `filter`:
+```
+doubled_odds = map(lambda n: n * 2, filter(lambda n: n % 2 == 1, numbers))
+```
 
 ---
 
@@ -76,7 +87,7 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> Between 01-02-2013 and 07-28-2015 there are 937 days, 0:00:00 seconds
 
 b.  
 ```
@@ -84,7 +95,7 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> Between 12312013 and 05282015 there are 513 days, 0:00:00 seconds
 
 c.  
 ```
@@ -92,7 +103,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  (answer will be in number of days)
+>> Between 15-Jan-1994 and 14-Jul-2015 there are 7850 days, 0:00:00 seconds
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
