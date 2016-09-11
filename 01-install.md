@@ -48,7 +48,7 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
-I already had 2.7 installed on my computer, using Anaconda interpreter.
+> I already had 2.7 installed on my computer, using Anaconda interpreter.
 
 ###Q2. Which Python Version Installed   
 

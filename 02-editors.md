@@ -60,7 +60,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
-vim. I edited this file in vim, after consulting an online tutorial.
+> vim. I edited this file in vim, after consulting an online tutorial.
 
 --
 
@@ -68,6 +68,6 @@ vim. I edited this file in vim, after consulting an online tutorial.
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
-I have been using Sublime for approx 3 months, and the most interesting feature in my opinion is the option to tab-complete variables. Jupyter also does this. Sublime is similar to Notepad++, which is my graphical editor of choice on Windows. I will investigate additional customizations to Sublime, although for now I have relatively happy with it out of the box.
+> I have been using Sublime for approx 3 months, and the most interesting feature in my opinion is the option to tab-complete variables. Jupyter also does this. Sublime is similar to Notepad++, which is my graphical editor of choice on Windows. I will investigate additional customizations to Sublime, although for now I have relatively happy with it out of the box.
 
  
