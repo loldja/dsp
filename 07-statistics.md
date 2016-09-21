@@ -77,7 +77,7 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 ###Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Neither school of thought is explicitly "more correct" than the other, and coming from either mindset can get you to the correct interpretation and answer to a problem. But generally, frequentists imagine that a single sample comes from a population of samples with a knowable distribution of frequencies. Additional samples do not change the underlying probability distribution. Bayesians do not make assumptions about the distribution of probabilities but use new knowledge to update their understanding of the probability of an event, i.e. if we know 3 of the following { p(a), p(b), p(a|b), p(b|a) } we can calculate the missing probability.
 
 ---
 
